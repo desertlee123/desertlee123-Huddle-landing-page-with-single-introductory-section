@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--Violet);  
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    align-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+    }
+}
+
+:root {
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;    
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+.header {    
+    max-width: 400px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        max-width: 1300px;
+        min-width: 1300px;
+        margin-bottom: 30px;
+    }
+}
+
+.main {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        max-width: 1300px;
+        min-width: 1300px;
+        margin-bottom: 0;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.article {        
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 1024px) {
+    .article {
+        margin-top: 20px;
+        padding-left: 60px;
+        padding-right: 100px;
+        text-align: left;
+    }
+}
+
+.logo {
+    width: 45%;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        width: 15%;
+    }
+}
+
+.main-image {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main-image {
+        margin-bottom: 0;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: var(--font-headings);
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+.text {
+    margin-bottom: 35px;
+    font-family: var(--font-body);
+    line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .text {
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text {
+        font-size: 1rem;
+    }
+}
+
+.link {
+    padding: 12px 70px;
+    font-size: .9rem;
+    font-family: var(--font-headings);    
+    color: var(--Violet);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: 0 3px 5px 3px hsla(0, 0%, 0%, 0.30);
+}
+
+@media screen and (min-width: 768px) {
+    .link {
+        padding: 15px 9.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .link {
+        padding: 13px 60px;
+        font-size: 1rem;
+    }
+}
+
+.footer {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        max-width: 1300px;
+        min-width: 1300px;
+        margin-bottom: 0;
+        padding-right: 30px;
+    }
+}
+
+.list {    
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .list {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .list {
+        width: 150px;
+        margin: 0;
+        margin-left: auto;
+    }
+}
+
+.list__link {    
+    width: 5px;
+    height: 5px;
+    padding: 15px;
+    text-decoration: none;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid white;    
+    border-radius: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .list__link {
+        padding: 25px;
+        font-size: 1.5rem;        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .list__link {
+        padding: 18px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .link:hover {
+        color: hsl(0, 0%, 100%);
+        background-color: var(--Soft-Magenta);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .list__link:hover {
+        color: var(--Soft-Magenta);
+        border-color: var(--Soft-Magenta);
+    }
+}
